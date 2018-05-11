@@ -17,7 +17,7 @@
             var i;
             var xmlDoc = xml.responseXML;
             var table = "<tr><th>Name</th><th>Price</th></tr>";
-            var x = xmlDoc.getElementsByTagName("CD");
+            var x = xmlDoc.getElementsByTagName("SERVICE");
             for (i = 0; i < x.length; i++) {
                 table += "<tr><td>" +
                     x[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue +
